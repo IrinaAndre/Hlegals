@@ -1,0 +1,59 @@
+.services {
+    padding-top: 45px;
+
+    &__link {
+        @include textData(14px, 1.2);
+        letter-spacing: 1px;
+        color: $white;
+        opacity: 0.5;
+        margin-bottom: 3px;
+
+        &:hover,
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+
+    &__title {
+        @include textData(32px, 1.18);
+        @extend %title-Gradient;
+        margin-bottom: 20px;
+    }
+
+    .col {
+        margin-bottom: 40px;
+    }
+
+    &__desc {
+        margin-bottom: 10px;
+    }
+
+    &__icon {
+        max-width: 64px;
+        margin-right: 10px;
+    }
+
+    &__item-link {
+        color: $blue;
+        font-weight: medium;
+
+        &:hover,
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+
+    &__item-title {
+        color: $blue;
+        @include textData(18px, 1.18);
+    }
+
+    &__item-tit {
+        @include textData(18px, 1.18);
+    }
+
+    &__item-desc {
+        @include textData(16px, 1.37);
+        color: $white;
+    }
+}

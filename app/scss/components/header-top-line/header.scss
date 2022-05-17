@@ -1,0 +1,139 @@
+.header {
+    @extend %bg-Gradient;
+    padding-top: 25px;
+    @include textData(16px, 1.19);
+
+    &__dark-background {
+        background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%);
+    }
+
+    &__logo {
+        max-width: 78px;
+    }
+
+    &__logo-splash {
+        max-width: 11px;
+    }
+
+    &__logo-text {
+        @include textData(19px, 1.16);
+        color: $white;
+        padding: 0;
+    }
+
+    &__logo-splash-symbol {
+        max-width: 21px;
+    }
+
+    &__contacts {
+        margin-bottom: 16px;
+    }
+
+    .btn {
+        @include textData(12px, 1.16);
+        letter-spacing: 1px;
+        color: $white;
+        padding: 0;
+        border: none;
+
+        &:hover {
+            background: $blue-magenta;
+            border-radius: 8px;
+            padding: 5px;
+        }
+    }
+
+    .btn-group > .btn:not(:last-child) {
+        margin-right: 10px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .btn-check:active + .btn-outline-primary,
+    .btn-check:checked + .btn-outline-primary {
+        background: $dark-pink;
+        border-radius: 8px;
+        padding: 5px;
+        margin-right: 6px;
+        box-shadow: none;
+    }
+
+    &__address,
+    &__facebook-logo {
+        color: $white;
+    }
+
+    &__tel {
+        color: $blue-magenta;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__facebook-logo:hover {
+        color: $blue;
+    }
+
+    button[aria-expanded="true"] {
+        .navbar-toggler-icon {
+            width: 18px;
+            height: 18px;
+            border: none;
+            background: transparent
+                url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+                center/1em auto no-repeat;
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+    }
+
+    .nav-item {
+        text-align: center;
+        border: 2px solid $blue-magenta;
+        border-radius: 12px;
+        padding: 3px 0 5px;
+
+        &:hover {
+            background: $blue-magenta;
+        }
+    }
+
+    .nav-item:first-child {
+        margin-top: 16px;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-bottom: 11px;
+    }
+
+    .nav-item .active {
+        color: $dark-pink;
+    }
+
+    &__nav-link {
+        @include textData(24px, 1.17);
+        font-weight: 500;
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+}
+

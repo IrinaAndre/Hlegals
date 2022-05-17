@@ -1,0 +1,43 @@
+.team {
+    padding: 20px 0 40px;
+
+    &__title {
+        max-width: 864px;
+        @include textData(32px, 1.19);
+        @extend %title-Gradient;
+    }
+
+    &__member {
+        margin: 20px 0 0 0;
+    }
+
+    &__img-wrapper {
+        margin: 0 20px 0 0;
+    }
+
+    &__img {
+        max-width: 158px;
+    }
+
+    &__member-name {
+        @include textData(18px, 1.17);
+        color: $purplish-blue;
+        font-weight: 500;
+        margin: 0 0 5px;
+    }
+
+    &__member-position {
+        @include textData(16px, 1.4);
+        color: $blue-magenta;
+        margin: 0 0 10px 0;
+    }
+
+    &__member-btn {
+        color: $blue;
+
+        &:hover,
+        &:focus {
+          color: $dark-pink;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.publications {
+    padding: 20px 0 40px;
+    background-color: $grey;
+    color: #000000;
+
+    &__wrapper {
+        margin-top: 20px;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    &__link {
+        @include textData(14px, 1.2);
+        letter-spacing: 1px;
+        color: $blue;
+        margin-bottom: 3px;
+
+        &:hover,
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+
+    &__title {
+        @include textData(32px, 1.19);
+        @extend %title-Gradient;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        background-color: $white;
+        border-radius: 8px;
+    }
+
+    &__desc {
+        padding: 20px 20px;
+    }
+
+    &__desc-first {
+        border-radius: 8px;
+    }
+
+    &__title-link {
+        @include textData(18px, 1.17);
+        color: $blue;
+
+        &:hover,
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+
+    &__date {
+        @include textData(12px, 1.17);
+        color: $blue-magenta;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+
+    &__btn-wrapper {
+        margin-top: 20px;
+    }
+
+    &__btn {
+        @extend %button-properties;
+        @include textData(14px, 1.2);
+    }
+}

@@ -1,0 +1,129 @@
+.header {
+    padding-top: 25px;
+    @include textData(16px, 1.19);
+
+    &__logo {
+        max-width: 78px;
+    }
+
+    &__logo-splash {
+        max-width: 11px;
+    }
+
+    &__logo-text {
+        @include textData(19px, 1.16);
+        color: $purplish-blue;
+        padding: 0;
+    }
+
+    &__logo-splash-symbol {
+        max-width: 21px;
+    }
+
+    &__contacts {
+        margin-bottom: 16px;
+    }
+
+    .btn {
+        @include textData(12px, 1.16);
+        letter-spacing: 1px;
+        color: $blue-magenta;
+        padding: 0;
+        border: none;
+
+        &:hover {
+            background: $grey;
+            border-radius: 8px;
+            padding: 5px;
+        }
+    }
+
+    .btn-group > .btn:not(:last-child) {
+        margin-right: 10px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .btn-check:active + .btn-outline-primary,
+    .btn-check:checked + .btn-outline-primary {
+        background: $dark-pink;
+        color: $white;
+        border-radius: 8px;
+        padding: 5px;
+        margin-right: 6px;
+        box-shadow: none;
+    }
+
+    &__address,
+    &__facebook-logo,
+    &__tel {
+        color: $blue-magenta;
+    }
+
+    &__tel:hover {
+        color: $blue-magenta;
+    }
+
+    &__facebook-logo:hover {
+        color: $blue;
+    }
+
+    button[aria-expanded="true"] {
+        .navbar-toggler-icon {
+            width: 20px;
+            height: 20px;
+            border: none;
+            background: url("./../images/header_white/close_icon.svg");
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(50, 50, 100)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-item {
+        text-align: center;
+        border: 2px solid #EDEDF7;
+        border-radius: 12px;
+        padding: 3px 0 5px;
+        background: $grey;
+
+        &:hover {
+            background: #EDEDF7;
+        }
+    }
+
+    .nav-item:first-child {
+        margin-top: 16px;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-bottom: 11px;
+    }
+
+    .nav-item .active {
+        color: $dark-pink;
+    }
+
+    &__nav-link {
+        @include textData(24px, 1.17);
+        font-weight: 500;
+        color: $blue;
+
+        &:hover {
+            color: $blue;
+        }
+
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+}

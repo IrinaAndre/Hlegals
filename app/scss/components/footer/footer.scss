@@ -1,0 +1,47 @@
+.footer {
+  @include textData(16px, 1.19);
+  background-color: $grey;
+
+  &__info {
+    padding: 20px 0 118px;
+    border-top: 4px solid #e6e6f0;
+  }
+
+  &__address {
+    color: $purplish-blue;
+    margin: 0 0 10px;
+  }
+
+  &__map-link {
+    @include textData(12px, 1.17);
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+  }
+
+  &__map-link,
+  &__email,
+  &__facebook-logo {
+    color: $blue;
+
+    &:hover {
+      color: $dark-pink;
+    }
+  }
+
+  &__contacts {
+    margin: 0 0 20px 0;
+  }
+
+  &__tel {
+    color: $purple;
+    margin: 20px 0;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  &__copyright {
+    color: $blue-magenta;
+  }
+}

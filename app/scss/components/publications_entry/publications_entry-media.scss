@@ -1,0 +1,43 @@
+@media (min-width: $breakpoint-sm) {
+    .entry {
+        &__img {
+            width: 100%;
+            max-width: 909px;
+            margin: 0 0 40px 0;
+        }
+
+        &__img-personalization {
+            max-width: 640px;
+            margin: 40px 0 15px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .entry {
+        padding: 60px 0 0;
+
+        &__gtpr-title {
+            @include textData(32px, 1.19);
+        }
+
+        &__data {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            @include textData(42px, 1.19);
+            margin: 40px 0;
+        }
+
+        &__result-title,
+        &__text-title {
+            @include textData(24px, 1.17);
+        }
+
+        &__img-wrappper {
+            margin-bottom: 40px;
+        }
+    }
+}

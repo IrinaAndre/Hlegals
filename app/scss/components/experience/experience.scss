@@ -1,0 +1,62 @@
+.experience-and-services-background {
+    @extend %bg-dark-Gradient;
+    position: relative;
+
+    &::before {
+        background-color: #cacadb;
+        border-radius: 0px 0px 12px 12px;
+        content: "";
+        width: calc(100% - 40px);
+        height: 10px;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+    }
+
+    &::after {
+        background-color: #e7e7f2;
+        border-radius: 0px 0px 12px 12px;
+        content: "";
+        width: calc(100% - 80px);
+        height: 10px;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+    }
+    
+    .experience {
+        color: $white;
+    
+        &__title {
+            @include textData(14px, 1.2);
+            @extend %text-Gradient;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            @include textData(22px, 1.18);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        &__desc {
+            @include textData(18px, 1.44);
+        }
+
+        .carousel-indicators {
+            position: relative;
+            top: 20px;
+            margin: 0 auto;
+        }
+    
+        .carousel-btn {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $blue;
+            border: none;
+        }
+    }
+}

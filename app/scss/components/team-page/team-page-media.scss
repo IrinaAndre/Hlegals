@@ -1,0 +1,82 @@
+@media (max-width: 320px) {
+    .team {
+        &__title {
+            @include textData(28px, 1.19);
+        }
+
+        &__img-wrapper {
+            margin: 0 10px 0 0;
+        }
+
+        &__img {
+            max-width: 118px;
+        }
+    
+        &__member-name {
+            @include textData(16px, 1.17);
+        }
+    
+        &__member-position {
+            @include textData(14px, 1.4);
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .team {
+        &__title {
+            @include textData(20px, 1.19);
+        }
+
+        &__img-wrapper {
+            margin: 0 10px 0 0;
+        }
+
+        &__img {
+            max-width: 108px;
+        }
+    
+        &__member-name {
+            @include textData(12px, 1.17);
+        }
+    
+        &__member-position {
+            @include textData(10px, 1.4);
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .team {
+        padding: 82px 0 60px;
+
+        &__title {
+            @include textData(42px, 1.19);
+        }
+    
+        &__members-top {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+
+        &__member {
+            margin: 0 40px 0 0;
+        }
+
+        &__member:last-child {
+            margin: 0;
+        }
+
+        &__img-wrapper {
+            margin: 0 0 20px 0 ;
+        }
+
+        &__img {
+            max-width: 100%;
+        }
+
+        &__member-position {
+            margin: 0;
+        }
+    }
+}

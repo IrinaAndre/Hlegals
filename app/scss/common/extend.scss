@@ -1,0 +1,50 @@
+%bg-dark-Gradient {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+}
+
+%bg-Gradient {
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+
+%title-Gradient {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%text-Gradient {
+    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%carousel-indicators {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $blue;
+    border: none;
+}
+
+%button-properties {
+    width: 240px;
+    height: 50px;
+    background-color: $blue;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    text-align: center;
+    color: $white;
+      
+    &:hover {
+        background-color: #0085ff;
+        box-shadow: 0px 0px 30px rgba(36, 163, 255, 0.5);
+    }
+
+    &:active {
+        background-color: #006ccf;
+        box-shadow: none;
+    }
+}

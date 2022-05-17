@@ -1,0 +1,33 @@
+@media (max-width: 280px) {
+    .team {
+        &__title {
+            @include textData(22px, 1.19);
+        }
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .team {
+        padding: 61px 0 41px 0;
+
+        .carousel-inner {
+            margin-bottom: 20px;
+        }
+         
+        &__img {
+            display: block;
+        }
+
+        &__info {
+            padding: 40px 40px 0 40px;
+        }
+
+        &__title {
+            @include textData(42px, 1.19);
+        }
+
+        &__img-mini {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.entry {
+    padding: 20px 0 0;
+    @include textData(18px, 1.4);
+    color: #000000;
+
+    &__info-wrapper {
+        max-width: 866px;
+    }
+
+    &__img {
+        width: calc(100% + 40px);
+        margin: 0 -20px 20px -20px;
+    }
+
+    &__gtpr-title {
+        @include textData(22px, 1.18);
+        color: $purplish-blue;
+        margin-bottom: 10px;
+    }
+
+    &__data {
+        @include textData(12px, 1.17);
+        color: $blue-magenta;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+        border-bottom: 4px solid #EDEDF7;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        @include textData(32px, 1.19);
+        @extend %title-Gradient;
+        margin: 20px 0 40px;
+    }
+
+    &__result-title {
+        @include textData(18px, 1.17);
+        color: $purple;
+        margin-bottom: 20px;
+    }
+
+    &__result-text {
+        margin-bottom: 20px;
+
+        &::marker {
+        color: $dark-pink;
+        font-weight: 700;
+        }
+    }
+
+    &__img-wrappper {
+        margin-bottom: 20px;
+    }
+
+    &__img-personalization {
+        width: calc(100% + 40px);
+        margin: 20px -20px 10px -20px;
+    }
+
+    &__img-title {
+        @include textData(16px, 1.4);
+        text-align: center;
+        color: $blue-magenta;
+    }
+
+    &__text-title {
+        @include textData(18px, 1.17);
+        color: $purplish-blue;
+        margin: 40px 0 20px;
+    }
+
+    &__links-wrapper {
+        padding-top: 20px;
+        border-top: 4px solid #E6E6F0;
+        margin-top: 40px;
+    }
+
+    &__social-link:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__social-icon {
+        padding: 9px;
+        background: $grey;
+        border-radius: 12px;
+    }
+}

@@ -1,0 +1,38 @@
+@media (min-width: $breakpoint-sm) {
+    .publications {
+        &__date {
+            padding-bottom: 20px;
+            border-bottom: 4px solid #E6E6F0;
+        }
+
+        &__text {
+            @include textData(16px, 1.37);
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .publications {
+        padding: 40px 0 60px;
+        margin-top: 60px;
+
+        &__list {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 40px;
+        }
+
+        &__item {
+            margin: 0 0 40px 0;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .publications {
+        &__list {
+            column-count: 3;
+        }
+    }
+}

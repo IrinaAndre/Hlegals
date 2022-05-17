@@ -1,0 +1,100 @@
+.contact {
+    padding: 20px 0 40px;
+    @include textData(21px, 1.4);
+
+    &__info {
+        margin: 0 0 40px;
+    }
+
+    &__address {
+        color: $purplish-blue;
+        font-weight: 500;
+        padding-bottom: 20px;
+        border-bottom: 4px solid #E6E6F0;
+    }
+
+    &__links {
+        padding: 40px 0;
+        border-bottom: 4px solid #E6E6F0;
+        margin-bottom: 20px;
+    }
+
+    &__tel {
+        color: $purple;
+        margin-bottom: 20px;
+    }
+
+    &__email,
+    &__facebook-link {
+        color: $blue;
+    }
+
+    &__tel,
+    &__email,
+    &__facebook-link {
+        &:hover,
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+
+    .form {
+        width: 100%;
+        padding: 20px;
+        background: $grey;
+        border-radius: 12px;
+        @include textData(18px, 1.4);
+
+        &__title {
+            font-weight: 500px;
+            @include textData(22px, 1.18);
+            @extend %title-Gradient;
+            margin-bottom: 20px;
+        }
+
+        &__input {
+            width: 100%;
+            border: none;
+            outline: none;
+            resize: none;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        &__input::placeholder {
+            color: $blue-magenta;
+        }
+
+        &__input:invalid:not(:placeholder-shown){
+            border: 2px solid $pink;
+        }
+        
+        &__input:valid:not(:placeholder-shown){
+            border: none;
+        }
+
+        textarea {
+            height: 180px;
+        }
+
+        &__question {
+            @include textData(14px, 1.2);
+            letter-spacing: 1px;
+            color: $blue-magenta;
+            margin-bottom: 10px;
+        }
+
+        &__btn {
+            @extend %button-properties;
+            @include textData(14px, 1.2);
+        }
+    }
+}
+
+.map {
+    &__iframe {
+        width: 100%;
+        height: 600px;
+    }
+}

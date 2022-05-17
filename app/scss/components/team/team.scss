@@ -1,0 +1,61 @@
+.team {
+    padding: 40px 0 30px 0;
+
+    .carousel-inner {
+        background: #F5F5FA;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__info {
+        padding: 20px 5px 20px 21px;
+    }
+
+    &__link {
+        @include textData(14px, 1.2);
+        letter-spacing: 1px;
+        color: $blue;
+
+        &:hover,
+        &:focus {
+            color: $dark-pink;
+        }
+    }
+
+    &__title {
+        @include textData(32px, 1.19);
+        @extend %title-Gradient;
+        margin: 3px 0 10px;
+    }
+
+    &__img-mini {
+        margin-right: 10px;
+    }
+
+    &__name {
+        @include textData(18px, 1.17);
+        margin-bottom: 5px;
+    }
+
+    &__position {
+        @include textData(16px, 1.37);
+    }
+
+    &__name,
+    &__position {
+        color: $blue-magenta;
+    }
+
+    .carousel-indicators {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        @extend %carousel-indicators;
+    }
+}

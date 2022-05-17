@@ -1,0 +1,28 @@
+@media (min-width: $breakpoint-lg) {
+    .cases {
+        &__wrapper {
+            padding-top: 60px;
+        }
+
+        &__info-hillel {
+            padding: 48px 20px 20px;
+        }
+
+        &__border-tapgerine {
+            border-radius: 0 12px 0 0;
+        }
+
+        &__border-3dlook {
+            border-radius: 0 0 0 12px;
+        }
+
+        &__border-clikky {
+            border-radius: 0 0 12px 0;
+        }
+
+        &__desc {
+            @include textData(24px, 1.17);
+            margin-bottom: 20px;
+        }
+    }
+}

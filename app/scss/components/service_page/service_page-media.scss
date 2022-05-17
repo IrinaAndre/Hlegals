@@ -1,0 +1,22 @@
+@media (min-width: $breakpoint-lg) {
+    .service {
+        padding: 52px 0 80px;
+    
+        &__it-title {
+            @include textData(42px, 1.19);
+        }
+
+        &__it-text {
+            @include textData(21px, 1.4);
+        }
+
+        &__btn-wrapper {
+            margin: 40px 0 80px;
+        }
+
+        &__desc-title {
+            @include textData(24px, 1.17);
+            margin-bottom: 20px;
+        }
+    }
+}

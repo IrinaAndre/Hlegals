@@ -1,0 +1,35 @@
+body {
+  font-family: "TT Norms", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 1092px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.row,
+.row > * {
+	--bs-gutter-x: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}

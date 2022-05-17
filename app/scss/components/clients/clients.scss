@@ -1,0 +1,13 @@
+.clients {
+
+    &__title {
+        padding: 30px 0;
+        @include textData(14px, 1.2);
+        letter-spacing: 1px;
+        color: $purplish-blue;
+    }
+
+    .col img {
+        width: 100%;
+    }
+}

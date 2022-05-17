@@ -1,0 +1,54 @@
+.service {
+    padding: 20px 0 23px;
+    color: #FFFFFF;
+
+    &__it-info {
+        max-width: 861px;
+    }
+
+    &__it-icon {
+        margin-bottom: 20px;
+    }
+
+    &__it-title {
+        @include textData(32px, 1.18);
+        @extend %title-Gradient;
+        margin-bottom: 20px;
+    }
+
+    &__it-text {
+        @include textData(18px, 1.4);
+    }
+
+    &__btn-wrapper {
+        margin: 40px 0 40px;
+    }
+
+    &__btn {
+        @extend %button-properties;
+        @include textData(14px, 1.2);
+    }
+
+    &__it-desc {
+        padding-top: 20px;
+        border-top: 4px solid rgba(255, 255, 255, .5);
+    }
+
+    &__desc-title {
+        @include textData(18px, 1.4);
+        font-weight: medium;
+        margin-bottom: 10px;
+    }
+
+    &__it-list {
+        @include textData(18px, 1.17);
+
+        li:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        li::marker {
+            color: $dark-pink;
+        }
+    }
+}
